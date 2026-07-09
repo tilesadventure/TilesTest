@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa História - ReTile</title>
+</head>
+<!-- O fundo aqui é um tom bege muito suave (fdfcf8) para dar aquele ar de revista -->
+<body style="margin: 0; padding: 0; background-color: #fdfcf8; font-family: sans-serif; color: #333333;">
+
+    <!-- ========================================== -->
+    <!-- 1. CABEÇALHO (O mesmo de sempre)           -->
+    <!-- ========================================== -->
+    <header style="background-color: #ffffff; width: 100%; border-bottom: 1px solid #eaeaea; font-family: sans-serif; position: relative; z-index: 1000;">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 40px; border-bottom: 1px solid #f5f5f5;">
+            <div style="display: flex; gap: 25px; font-size: 13px;">
+                <a href="historia.html" style="color: #666666; text-decoration: none;">Nossa História</a>
+                <a href="contactos.html" style="color: #666666; text-decoration: none;">Contactos</a>
+                <a href="press.html" style="color: #666666; text-decoration: none;">Press</a>
+                <a href="trabalhos.html" style="color: #666666; text-decoration: none;">Trabalhos Realizados</a>
+            </div>
+            <div style="display: flex; gap: 15px; color: #333333;">
+                <a href="#" style="color: inherit;"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
+                <a href="#" style="color: inherit;"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; position: relative;">
+            <div style="display: flex; align-items: center; gap: 8px; color: #888888;">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <span style="font-size: 14px;">Pesquisar...</span>
+            </div>
+            <div style="position: absolute; left: 50%; transform: translateX(-50%); background-color: #00223b; padding: 10px 25px;">
+                <a href="index.html" style="color: #ffffff; text-decoration: none; font-size: 20px; font-weight: bold; letter-spacing: 3px;">ReTile</a>
+            </div>
+            <div style="color: #555555; cursor: pointer;">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- 2. CORPO DA PÁGINA (História/Missão)       -->
+    <!-- ========================================== -->
+    <!-- 'gap: 80px' cria um distanciamento elegante entre a foto e o texto -->
+    <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 100px 40px; box-sizing: border-box; gap: 80px;">
+        
+        <!-- COLUNA DA ESQUERDA (Imagem Editorial) -->
+        <div style="flex: 1; max-width: 50%;">
+            <!-- Substitui "Imagens/nossa-equipa.jpg" por uma fotografia tua ou do teu atelier -->
+            <img src="Imagens/nossa-equipa.jpg" 
+                 alt="Fundadores da ReTile" 
+                 style="width: 100%; height: auto; aspect-ratio: 4/5; object-fit: cover; box-shadow: 0 4px 20px rgba(0,0,0,0.03);" />
+        </div>
+
+        <!-- COLUNA DA DIREITA (Textos) -->
+        <div style="flex: 1; max-width: 50%;">
+            
+            <!-- Etiqueta superior pequena -->
+            <p style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin: 0 0 30px 0; color: #444444;">
+                ( A NOSSA MISSÃO )
+            </p>
+
+            <!-- Título Principal com Letra Clássica (Serifa) -->
+            <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 42px; line-height: 1.2; font-weight: normal; margin: 0 0 40px 0; color: #1a1a1a;">
+                Ajudamos negócios e pessoas a construírem espaços autênticos, contando a história da sua marca através da arte tradicional do azulejo.
+            </h2>
+
+            <!-- Texto descritivo -->
+            <p style="font-size: 14px; line-height: 1.8; color: #555555; margin: 0 0 50px 0; max-width: 90%;">
+                Descubra uma abordagem guiada pela herança e pela mestria artesanal. A narrativa única do seu espaço é o nosso foco, garantindo que cada peça ressoa com a cultura e o design autêntico. Mergulhe num mundo de cerâmica que reflete os verdadeiros valores da criação manual.
+            </p>
+
+            <!-- Botão com contorno limpo -->
+            <a href="loja.html" style="text-decoration: none;">
+                <button style="background-color: transparent; border: 1px solid #1a1a1a; color: #1a1a1a; padding: 16px 32px; font-size: 11px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; transition: 0.3s;">
+                    Começar o seu Projeto
+                </button>
+            </a>
+
+        </div>
+    </div>
+<!-- ========================================== -->
+<!-- SECÇÃO DE VALORES (Separador)              -->
+<!-- ========================================== -->
+<div style="background-color: #f4f6f8; padding: 80px 40px; text-align: center; color: #0f2136; font-family: sans-serif; box-sizing: border-box;">
+
+    <!-- Subtítulo Pequeno -->
+    <p style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin: 0 0 10px 0; font-weight: bold;">
+        Valores / Core Values
+    </p>
+
+    <!-- Título Principal com Letra Clássica -->
+    <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 40px; margin: 0 0 70px 0; letter-spacing: 2px; text-transform: uppercase; font-weight: normal;">
+        What We Stand For
+    </h2>
+
+    <!-- Contentor das 3 Colunas -->
+    <div style="display: flex; justify-content: space-between; max-width: 1100px; margin: 0 auto; gap: 40px; flex-wrap: wrap;">
+
+        <!-- 1. COLUNA: Creativity -->
+        <div style="flex: 1; min-width: 250px; display: flex; flex-direction: column; align-items: center;">
+            <!-- Ícone Lâmpada -->
+            <svg width="60" height="60" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" style="margin-bottom: 20px;">
+                <path d="M9 21h6m-3-18c-3.866 0-7 3.134-7 7 0 1.874.74 3.575 1.946 4.834.733.766 1.139 1.776 1.258 2.825A1.5 1.5 0 0 0 8.7 18h6.6a1.5 1.5 0 0 0 1.496-1.341c.119-1.049.525-2.059 1.258-2.825C19.26 12.575 20 10.874 20 10c0-3.866-3.134-7-7-7z"></path>
+            </svg>
+            <h3 style="font-size: 16px; letter-spacing: 1.5px; margin: 0 0 15px 0; text-transform: uppercase; font-weight: bold;">
+                Creativity
+            </h3>
+            <p style="font-size: 14px; line-height: 1.6; margin: 0; max-width: 280px; font-weight: 500;">
+                Trabalhamos com materiais únicos, feitos à mão, da forma tradicional mas procurando sempre a Inovação e a Criatividade.
+            </p>
+        </div>
+
+        <!-- 2. COLUNA: Professionalism -->
+        <div style="flex: 1; min-width: 250px; display: flex; flex-direction: column; align-items: center;">
+            <!-- Ícone Régua / Ferramentas -->
+            <svg width="60" height="60" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" style="margin-bottom: 20px;">
+                <path d="M2 22l7-7m-1-5l6-6a2 2 0 0 1 2.8 0l1.4 1.4a2 2 0 0 1 0 2.8l-6 6m-5-1L6.2 16.2a2 2 0 0 0-2.8 0L2 17.6V22h4.4z"></path>
+            </svg>
+            <h3 style="font-size: 16px; letter-spacing: 1.5px; margin: 0 0 15px 0; text-transform: uppercase; font-weight: bold;">
+                Professionalism
+            </h3>
+            <p style="font-size: 14px; line-height: 1.6; margin: 0; max-width: 280px; font-weight: 500;">
+                Qualidade e Personalização.<br><br>Estamos determinados em encontrar as melhores soluções para os nossos clientes.
+            </p>
+        </div>
+
+        <!-- 3. COLUNA: Personalized Service -->
+        <div style="flex: 1; min-width: 250px; display: flex; flex-direction: column; align-items: center;">
+            <!-- Ícone Azulejos / Grelha -->
+            <svg width="60" height="60" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" style="margin-bottom: 20px;">
+                <path d="M4 4h6v6H4V4zm10 0h6v6h-6V4zm0 10h6v6h-6v-6zM4 14h6v6H4v-6z"></path>
+            </svg>
+            <h3 style="font-size: 16px; letter-spacing: 1.5px; margin: 0 0 15px 0; text-transform: uppercase; font-weight: bold;">
+                Personalized Service
+            </h3>
+            <p style="font-size: 14px; line-height: 1.6; margin: 0; max-width: 280px; font-weight: 500;">
+                Pintamos os azulejos, em Atelier próprio e produzimos os mosaicos hidráulicos na nossa Oficina em Estremoz.
+            </p>
+        </div>
+
+    </div>
+</div>
+<!-- ========================================== -->
+<!-- SECÇÃO QUEM SOMOS (Texto + Grelha Fotos)   -->
+<!-- ========================================== -->
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; max-width: 1300px; margin: 100px auto; padding: 0 40px; gap: 50px; font-family: sans-serif; box-sizing: border-box;">
+
+    <!-- COLUNA DA ESQUERDA (Textos) -->
+    <div style="flex: 1; min-width: 300px; padding-right: 20px;">
+        
+        <!-- Título Principal -->
+        <h2 style="font-size: 42px; color: #164354; font-weight: 300; line-height: 1.2; margin: 0 0 30px 0;">
+            Cultivamos o encontro entre autores e artesãos
+        </h2>
+        
+        <!-- Texto Descritivo -->
+        <p style="font-size: 16px; color: #555555; line-height: 1.6; margin: 0 0 40px 0; max-width: 450px;">
+            Ao longo dos anos, muitos foram os autores que desenvolveram o seu trabalho lado-a-lado com os nossos artesãos, em ateliers próprios instalados na fábrica.
+        </p>
+        
+        <!-- Link com Linha Decorativa -->
+        <a href="nossa-equipa.html" style="font-size: 16px; color: #164354; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 15px; transition: opacity 0.3s;">
+            Conheça os autores 
+            <span style="display: inline-block; width: 50px; height: 1.5px; background-color: #164354;"></span>
+        </a>
+
+    </div>
+
+    <!-- COLUNA DA DIREITA (Grelha de Fotos Estilo Masonry) -->
+    <!-- 'column-count: 3' é a magia que cria as três colunas verticais -->
+    <div style="flex: 1.3; min-width: 300px; column-count: 3; column-gap: 15px;">
+        
+        <!-- Fotografia 1 -->
+        <img src="Imagens/artesao1.jpg" alt="Mestre Artesão" style="width: 100%; height: auto; margin-bottom: 15px; display: block; border-radius: 2px;" />
+        
+        <!-- Fotografia 2 -->
+        <img src="Imagens/artesao2.jpg" alt="Pintura Manual" style="width: 100%; height: auto; margin-bottom: 15px; display: block; border-radius: 2px;" />
+        
+        <!-- Fotografia 3 -->
+        <img src="Imagens/artesao3.jpg" alt="Atelier ReTile" style="width: 100%; height: auto; margin-bottom: 15px; display: block; border-radius: 2px;" />
+        
+        <!-- Fotografia 4 -->
+        <img src="Imagens/artesao4.jpg" alt="Processo de Secagem" style="width: 100%; height: auto; margin-bottom: 15px; display: block; border-radius: 2px;" />
+        
+        <!-- Fotografia 5 -->
+        <img src="Imagens/artesao5.jpg" alt="Detalhe de Azulejo" style="width: 100%; height: auto; margin-bottom: 15px; display: block; border-radius: 2px;" />
+        
+        <!-- Fotografia 6 -->
+        <img src="Imagens/artesao6.jpg" alt="Equipa de Trabalho" style="width: 100%; height: auto; margin-bottom: 15px; display: block; border-radius: 2px;" />
+
+    </div>
+
+</div>
+<!-- ========================================== -->
+<!-- 2. SECÇÃO: FRASE INSPIRACIONAL (ECRÃ INTEIRO) -->
+<!-- ========================================== -->
+<div style="width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; min-height: 520px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 60px 20px; box-sizing: border-box; background-color: #666666; background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Imagens/fundo-citacao.jpg'); background-size: cover; background-position: center; background-attachment: fixed; margin-top: 80px; margin-bottom: 0;">
+
+    <!-- Frase Central -->
+    <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 38px; line-height: 1.4; color: #ffffff; font-weight: normal; max-width: 850px; margin: 0 0 45px 0; padding: 0 20px;">
+        A sua história é a nossa <i>inspiração</i>, e estamos aqui para a ajudar a ganhar vida em cada detalhe.
+    </h2>
+
+    <!-- Botão -->
+    <a href="contactos.html" style="text-decoration: none;">
+        <button style="background-color: transparent; border: 1px solid rgba(255, 255, 255, 0.6); color: #ffffff; padding: 15px 40px; font-size: 11px; font-family: sans-serif; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; transition: all 0.3s ease;">
+            FALE CONNOSCO
+        </button>
+    </a>
+
+</div>
+ <!-- RODAPÉ (FOOTER) -->
+    <footer style="background-color: #0c1f33; color: #ffffff; font-family: sans-serif; padding: 60px 40px 20px 40px; font-size: 14px;">
+        
+        <!-- Topo do Rodapé: Colunas Principais -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; max-width: 1200px; margin: 0 auto; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+            
+            <!-- Coluna 1: Empresa -->
+            <div style="flex: 1; min-width: 180px;">
+                <h4 style="font-size: 12px; letter-spacing: 2px; margin-top: 0; margin-bottom: 25px; font-weight: 600;">EMPRESA</h4>
+                <div style="display: flex; flex-direction: column; gap: 15px; color: #c0c8d1;">
+                    <a href="#" style="color: inherit; text-decoration: none;">Nossa História</a>
+                    <a href="#" style="color: inherit; text-decoration: none;">Contactos</a>
+                    <a href="#" style="color: inherit; text-decoration: none;">Press</a>
+                    <a href="#" style="color: inherit; text-decoration: none;">Trabalhos Realizados</a>
+                    <a href="#" style="color: inherit; text-decoration: none;">FAQ's</a>
+                </div>
+            </div>
+
+            <!-- Coluna 2: Produtos -->
+            <div style="flex: 1; min-width: 180px;">
+                <h4 style="font-size: 12px; letter-spacing: 2px; margin-top: 0; margin-bottom: 25px; font-weight: 600;">PRODUTOS</h4>
+                <div style="display: flex; flex-direction: column; gap: 15px; color: #c0c8d1;">
+                    <a href="#" style="color: inherit; text-decoration: none;">Azulejo</a>
+                    <a href="#" style="color: inherit; text-decoration: none;">Mosaicos</a>
+                    <a href="#" style="color: inherit; text-decoration: none;">Terracota</a>
+                    <a href="#" style="color: inherit; text-decoration: none;">Pastilha de Vidro</a>
+                    <a href="#" style="color: inherit; text-decoration: none;">Revestimento Porcelânico</a>
+                </div>
+            </div>
+
+            <!-- Coluna 3: Mais Produtos (Sem Título para alinhar) -->
+            <div style="flex: 1; min-width: 180px;">
+                <!-- Título invisível apenas para manter o alinhamento vertical com a coluna anterior -->
+                <h4 style="font-size: 12px; letter-spacing: 2px; margin-top: 0; margin-bottom: 25px; opacity: 0;">PRODUTOS</h4>
+                <div style="display: flex; flex-direction: column; gap: 15px; color: #c0c8d1;">
+                    <a href="#" style="color: inherit; text-decoration: none;">Perfis</a>
+                    <a href="#" style="color: inherit; text-decoration: none;">Bloco de Vidro</a>
+                    <a href="#" style="color: inherit; text-decoration: none;">Vitrais</a>
+                    <a href="#" style="color: inherit; text-decoration: none;">Alçapões Visita</a>
+                    <a href="#" style="color: inherit; text-decoration: none;">Stocks/Stockoff</a>
+                </div>
+            </div>
+
+            <!-- Coluna 4: Logotipo, Contactos e Newsletter -->
+            <div style="flex: 2; min-width: 320px;">
+                
+                <!-- Logotipo (Caixa Branca simulada) -->
+                <div style="background-color: #ffffff; color: #0c1f33; padding: 12px 20px; display: inline-block; font-size: 26px; font-family: 'Times New Roman', serif; letter-spacing: 3px; margin-bottom: 25px;">
+                    AZULIMA
+                </div>
+                
+                <!-- Morada e Contactos -->
+                <p style="color: #ffffff; line-height: 1.8; font-size: 13px; font-weight: bold; margin-top: 0; margin-bottom: 25px;">
+                    Azulmarmol-Revestimentos Lda. Rua<br>
+                    Barão de Forrester, nº707, 4050-273 Porto<br>
+                    Tel: +351 225 511 010 | Mail:<br>
+                    info@azulima.pt | Web: www.azulima.pt
+                </p>
+
+                <!-- Formulário de Newsletter -->
+                <form style="display: flex; width: 100%; max-width: 450px;">
+                    <input type="email" placeholder="Seu endereço de email" style="flex: 1; padding: 14px 15px; border: none; outline: none; font-size: 13px; font-family: sans-serif;">
+                    <button type="submit" style="padding: 14px 25px; background-color: #0c1f33; color: #ffffff; border: 1px solid #ffffff; cursor: pointer; font-size: 13px; font-weight: bold; letter-spacing: 1px;">Enviar</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Base do Rodapé (Bottom Bar) -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding-top: 25px; color: #c0c8d1; font-size: 12px;">
+            
+            <!-- Links Legais -->
+            <div style="display: flex; gap: 25px;">
+                <a href="#" style="color: inherit; text-decoration: none;">Política de Privacidade</a>
+                <a href="#" style="color: inherit; text-decoration: none;">Termos e Condições</a>
+            </div>
+
+            <!-- Redes Sociais -->
+            <div style="display: flex; gap: 20px; color: #ffffff; margin-left: auto; margin-right: 50px;">
+                <!-- Ícone Facebook -->
+                <a href="#" style="color: inherit;" aria-label="Facebook">
+                    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                    </svg>
+                </a>
+                <!-- Ícone Instagram -->
+                <a href="#" style="color: inherit;" aria-label="Instagram">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <div>
+                ©Developed by <span style="font-weight: bold; color: #ffffff;">Wevolved</span>
+            </div>
+
+        </div>
+
+    </footer>
+</div>
+</body>
+</html>
