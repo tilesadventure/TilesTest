@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nossa História - ReTile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        /* REGRA GERAL: Oculta o menu de PC nos telemóveis */
+        @media (max-width: 768px) {
+            
+            /* Esta regra diz que qualquer elemento com a classe "menu-pc" desaparece no telemóvel */
+            .menu-pc {
+                display: none !important;
+            }
+
+            /* Esta regra diminui os títulos gigantes para caberem no ecrã do telemóvel */
+            .titulo-responsivo {
+                font-size: 28px !important;
+            }
+
+            /* Obriga as grelhas de 3 colunas a passarem para 1 coluna */
+            .grelha-fotos-mobile {
+                column-count: 1 !important;
+            }
+        }
+    </style>
 </head>
 <!-- O fundo aqui é um tom bege muito suave (fdfcf8) para dar aquele ar de revista -->
 <body style="margin: 0; padding: 0; background-color: #fdfcf8; font-family: sans-serif; color: #333333;">
