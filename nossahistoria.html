@@ -29,36 +29,80 @@
 <!-- O fundo aqui é um tom bege muito suave (fdfcf8) para dar aquele ar de revista -->
 <body style="margin: 0; padding: 0; background-color: #fdfcf8; font-family: sans-serif; color: #333333;">
 
-    <!-- ========================================== -->
-    <!-- 1. CABEÇALHO (O mesmo de sempre)           -->
-    <!-- ========================================== -->
-    <header style="background-color: #ffffff; width: 100%; border-bottom: 1px solid #eaeaea; font-family: sans-serif; position: relative; z-index: 1000;">
-        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 40px; border-bottom: 1px solid #f5f5f5;">
-            <div style="display: flex; gap: 25px; font-size: 13px;">
-                <a href="historia.html" style="color: #666666; text-decoration: none;">Nossa História</a>
-                <a href="contactos.html" style="color: #666666; text-decoration: none;">Contactos</a>
-                <a href="press.html" style="color: #666666; text-decoration: none;">Press</a>
-                <a href="trabalhos.html" style="color: #666666; text-decoration: none;">Trabalhos Realizados</a>
-            </div>
-            <div style="display: flex; gap: 15px; color: #333333;">
-                <a href="#" style="color: inherit;"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
-                <a href="#" style="color: inherit;"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
-            </div>
+ <!-- INÍCIO DO CABEÇALHO (Copiar para todas as páginas) -->
+<header style="background-color: #ffffff; width: 100%; border-bottom: 1px solid #eaeaea; font-family: sans-serif; position: relative; z-index: 1000;">
+    
+    <!-- Barra Superior: Links e Redes Sociais -->
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 40px; border-bottom: 1px solid #f5f5f5;">
+        
+        <!-- Links da Esquerda -->
+        <div style="display: flex; gap: 25px; font-size: 13px;">
+            <a href="nossahistoria.html" style="color: #666666; text-decoration: none; transition: 0.2s;">Nossa História</a>
+            <a href="contactos.html" style="color: #666666; text-decoration: none; transition: 0.2s;">Contactos</a>
+            <a href="loja.html" style="color: #666666; text-decoration: none; transition: 0.2s;">Loja</a>
         </div>
-        <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; position: relative;">
-            <div style="display: flex; align-items: center; gap: 8px; color: #888888;">
-                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                <span style="font-size: 14px;">Pesquisar...</span>
-            </div>
-            <div style="position: absolute; left: 50%; transform: translateX(-50%); background-color: #00223b; padding: 10px 25px;">
-                <a href="index.html" style="color: #ffffff; text-decoration: none; font-size: 20px; font-weight: bold; letter-spacing: 3px;">ReTile</a>
-            </div>
-            <div style="color: #555555; cursor: pointer;">
-                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-            </div>
-        </div>
-    </header>
 
+        <!-- Ícones da Direita (Facebook e Instagram) -->
+        <div style="display: flex; gap: 15px; color: #333333;">
+            <a href="#" style="color: inherit; text-decoration: none;">
+                <!-- Ícone Facebook -->
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+                </svg>
+            </a>
+            <a href="#" style="color: inherit; text-decoration: none;">
+                <!-- Ícone Instagram -->
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- Barra Inferior: Pesquisa, Logótipo e Favoritos -->
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; position: relative;">
+        
+        <!-- Esquerda: Pesquisar -->
+<form id="meu-formulario" method="GET" style="display: flex; align-items: center; color: #888888; margin: 0;">
+    
+    <!-- Ícone da Lupa (podes usar uma tag button para clicar no ícone também) -->
+    <button type="submit" style="background: none; border: none; padding: 0; cursor: pointer; color: inherit; display: flex; align-items: center;">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="margin-right: 5px;">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+    </button>
+
+    <!-- Caixa de Texto onde o utilizador escreve -->
+    <input type="text" name="pesquisa" placeholder="Pesquisar..." style="background: transparent; border: none; outline: none; font-family: sans-serif; font-size: 14px; color: #555555; width: 120px; position: relative; z-index: 100;">
+    
+</form>
+        <!-- Centro: Logótipo -->
+                 <!-- O 'position: absolute' e 'left: 50%' garantem que fica perfeitamente ao centro do ecrã -->
+        <div style="position: absolute; left: 50%; transform: translateX(-50%); background-color: #00223b; padding: 10px 25px;">
+            <a href="index.html" style="color: #ffffff; text-decoration: none; font-size: 20px; font-weight: bold; letter-spacing: 3px;">
+                ReTile
+            </a>
+        </div>
+             <!-- Likes e carrinho -->
+<div style="display: flex; align-items: center; gap: 15px;">
+    <!-- Link dos Favoritos -->
+    <a href="favortitos.html" style="color: #888888; display: flex; align-items: center; text-decoration: none; cursor: pointer;">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+        </svg>
+    </a>
+
+        <!-- Botão do Carrinho -->
+    <button onclick="toggleCarrinho()" style="background: none; border: none; color: #1d1d1d; display: flex; align-items: center; cursor: pointer; padding: 0; position: relative;">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+        </svg>
+        <span id="contador-carrinho-icone" style="position: absolute; top: -5px; right: -8px; background-color: #e9e8e7; color: white; font-size: 10px; font-family: sans-serif; padding: 2px 6px; border-radius: 50%;">0</span>
+    </button>
+</div>
+        </div>
+</header>
+<!-- FIM DO CABEÇALHO -->
     <!-- ========================================== -->
     <!-- 2. CORPO DA PÁGINA (História/Missão)       -->
     <!-- ========================================== -->
@@ -325,15 +369,262 @@
                     </svg>
                 </a>
             </div>
-
-            <!-- Copyright -->
-            <div>
-                ©Developed by <span style="font-weight: bold; color: #ffffff;">Wevolved</span>
-            </div>
-
         </div>
-
     </footer>
 </div>
+<script>
+  const formulario = document.getElementById('meu-formulario');
+// Barra de pesquisa seleçao do que
+  formulario.addEventListener('submit', function(event) {
+    // 1. Impede o formulário de tentar ir para outra página automaticamente
+    event.preventDefault(); 
+
+    // 2. Lê exatamente o que a pessoa escreveu na caixa de texto
+    const caixaPesquisa = document.querySelector('input[name="pesquisa"]');
+    
+    // Transforma tudo em letras minúsculas e tira os espaços dos lados para evitar erros
+    const palavra = caixaPesquisa.value.toLowerCase().trim(); 
+
+    // 3. O Polícia Sinaleiro: Decide para onde enviar consoante a palavra!
+    if (palavra === 'contactos' || palavra === 'contacto') {
+      window.location.href = 'contactos.html';
+    } 
+    else if (palavra === 'historia' || palavra === 'nossa historia') {
+      window.location.href = 'nossahistoria.html';
+    } 
+    else if (palavra === 'loja' || palavra === 'azulejo' || palavra === 'azulejos') {
+      window.location.href = 'loja.html';
+    } 
+    else if (palavra !== '') {
+      // Se escrever algo que não programaste acima, faz isto:
+      alert('Não encontrámos uma página exata para "' + caixaPesquisa.value + '". Tenta escrever loja, contactos ou historia.');
+      
+      // (Opcional) Podes apagar a linha do alert acima e usar esta linha abaixo 
+      // para enviar a pessoa sempre para a loja caso a palavra seja desconhecida:
+      // window.location.href = 'loja.html?pesquisa=' + palavra;
+    }
+  });
+</script>
+<!-- ======================================================= -->
+<!-- CODIGO DO POP-UP DO CARRINHO (ESTILO NUDE PROJECT)     -->
+<!-- ======================================================= -->
+<style>
+    /* Fundo escuro transparente que cobre o site atrás do pop-up */
+    .carrinho-overlay {
+        position: fixed;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 9998;
+        display: none;
+    }
+    /* Gaveta do Carrinho que desliza da direita */
+    .carrinho-pop-up {
+        position: fixed;
+        top: 0; right: -420px; width: 400px; height: 100%;
+        background-color: white;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.05);
+        z-index: 9999;
+        transition: right 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+    /* Classe que o JavaScript ativa para abrir a gaveta */
+    .carrinho-pop-up.aberto { right: 0; }
+
+    /* Topo do Carrinho */
+    .carrinho-header {
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 25px 20px;
+    }
+    .carrinho-titulo { font-size: 18px; font-weight: bold; color: #3d2520; }
+    .carrinho-fechar { background: none; border: none; font-size: 20px; cursor: pointer; color: #111; }
+
+    /* Área dos Itens */
+    .carrinho-conteudo { flex: 1; overflow-y: auto; padding: 0 20px; }
+    
+    /* Estrutura do Produto igual à imagem */
+    .item-carrinho { display: flex; gap: 15px; margin-bottom: 25px; }
+    .item-carrinho-img { width: 90px; height: 120px; background-color: #f5f5f5; display: flex; align-items: center; justify-content: center; padding: 5px; box-sizing: border-box; }
+    .item-carrinho-img img { max-width: 100%; max-height: 100%; object-fit: contain; }
+    
+    .item-carrinho-detalhes { flex: 1; display: flex; flex-direction: column; text-align: left; }
+    .item-carrinho-nome { font-size: 14px; font-weight: bold; margin: 0 0 4px 0; color: #111; }
+    .item-carrinho-preco { font-size: 13px; color: #111; margin: 0 0 2px 0; }
+    .item-carrinho-tamanho { font-size: 12px; color: #777; margin: 0 0 15px 0; }
+    
+    /* Seletor de Quantidade e Botão Retirar */
+    .item-carrinho-acoes { display: flex; align-items: center; gap: 15px; margin-top: auto; }
+    .seletor-qtd { display: flex; align-items: center; gap: 12px; font-size: 13px; color: #555; }
+    .seletor-qtd button { background: none; border: none; cursor: pointer; font-size: 14px; color: #555; padding: 0 5px; }
+    .btn-retirar { background: none; border: none; color: #111; font-size: 12px; text-decoration: underline; cursor: pointer; padding: 0; }
+
+    /* Linha de Envio Grátis */
+    .barra-envio-gratis { border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 15px 20px; font-size: 12px; color: #111; text-align: left; }
+
+    /* Rodapé com Totais e Botão Checkout */
+    .carrinho-rodape { padding: 20px; background-color: white; font-family: sans-serif; }
+    .linhas-totais { display: flex; justify-content: space-between; font-size: 12px; color: #3d2520; font-weight: bold; margin-bottom: 5px; letter-spacing: 0.5px; }
+    .valores-totais { display: flex; justify-content: space-between; font-size: 15px; font-weight: bold; color: #111; margin-bottom: 15px; }
+    
+    .btn-checkout {
+        background-color: #3d2520; /* Castanho escuro Nude Project */
+        color: white; border: none; width: 100%; padding: 16px;
+        font-size: 13px; font-weight: bold; cursor: pointer; text-transform: uppercase; letter-spacing: 1px;
+    }
+    .texto-auxiliar { font-size: 10px; color: #999; text-align: center; margin-top: 8px; display: block; }
+</style>
+
+<!-- ELEMENTOS HTML DO POP-UP -->
+<div id="cartOverlay" class="carrinho-overlay" onclick="toggleCarrinho()"></div>
+
+<div id="cartSidebar" class="carrinho-pop-up">
+    <div class="carrinho-header">
+        <span class="carrinho-titulo">Cart</span>
+        <button class="carrinho-fechar" onclick="toggleCarrinho()">✕</button>
+    </div>
+    
+    <!-- Onde ficam os produtos adicionados -->
+    <div id="carrinho-itens-lista" class="carrinho-conteudo"></div>
+    
+    <!-- Texto de Envio Grátis igual ao da imagem -->
+    <div class="barra-envio-gratis">
+        Gasta mais <span id="quanto-falta-gratis">49€</span> e desbloqueia o envio grátis
+    </div>
+
+    <div class="carrinho-rodape">
+        <div class="linhas-totais">
+            <span>CART</span>
+            <span>SUBTOTAL</span>
+        </div>
+        <div class="valores-totais">
+            <span id="carrinho-total-itens-texto" style="font-weight: normal; color: #555; font-size: 13px;">0 Items</span>
+            <span id="carrinho-subtotal-valor">0€</span>
+        </div>
+        <button class="btn-checkout">Checkout</button>
+        <span class="texto-auxiliar">Os custos de envio e impostos são calculados no momento da compra</span>
+    </div>
+</div>
+
+<!-- CÉREBRO DO POP-UP (JAVASCRIPT) -->
+<script>
+    function toggleCarrinho() {
+        const sidebar = document.getElementById('cartSidebar');
+        const overlay = document.getElementById('cartOverlay');
+        
+        if(sidebar.classList.contains('aberto')) {
+            sidebar.classList.remove('aberto');
+            overlay.style.display = 'none';
+        } else {
+            sidebar.classList.add('aberto');
+            overlay.style.display = 'block';
+            renderizarItensCarrinho();
+        }
+    }
+
+    function adicionarAoCarrinho(nome, imagem, preco) {
+        let carrinho = JSON.parse(localStorage.getItem('meuCarrinho')) || [];
+        
+        // Verifica se o produto já existe no carrinho para aumentar a quantidade
+        let itemExistente = carrinho.find(item => item.nome === nome);
+        if(itemExistente) {
+            itemExistente.quantidade += 1;
+        } else {
+            carrinho.push({ nome: nome, imagem: imagem, preco: preco, quantidade: 1 });
+        }
+        
+        localStorage.setItem('meuCarrinho', JSON.stringify(carrinho));
+        atualizarSacoIcone();
+        toggleCarrinho(); // Abre o pop-up automaticamente ao adicionar!
+    }
+
+    function renderizarItensCarrinho() {
+        const lista = document.getElementById('carrinho-itens-lista');
+        const subtotalTxt = document.getElementById('carrinho-subtotal-valor');
+        const contadorTxt = document.getElementById('carrinho-total-itens-texto');
+        const faltaGratisTxt = document.getElementById('quanto-falta-gratis');
+        
+        let carrinho = JSON.parse(localStorage.getItem('meuCarrinho')) || [];
+        
+        if (carrinho.length === 0) {
+            lista.innerHTML = '<p style="color: #777; font-size: 13px; text-align: center; margin-top: 50px;">O teu carrinho está vazio.</p>';
+            subtotalTxt.innerText = '0€';
+            contadorTxt.innerText = '0 Items';
+            faltaGratisTxt.innerText = '49€';
+            return;
+        }
+        
+        lista.innerHTML = '';
+        let totalDinheiro = 0;
+        let totalItens = 0;
+        
+        carrinho.forEach(function(item, index) {
+            let precoLimpo = parseFloat(item.preco.replace('€', '').trim());
+            totalDinheiro += (precoLimpo * item.quantidade);
+            totalItens += item.quantidade;
+            
+            lista.innerHTML += `
+                <div class="item-carrinho">
+                    <div class="item-carrinho-img"><img src="${item.imagem}"></div>
+                    <div class="item-carrinho-detalhes">
+                        <p class="item-carrinho-nome">${item.nome}</p>
+                        <p class="item-carrinho-preco">${item.preco}</p>
+                        <p class="item-carrinho-tamanho">Único</p>
+                        <div class="item-carrinho-acoes">
+                            <div class="seletor-qtd">
+                                <button onclick="mudarQtd(${index}, -1)">-</button>
+                                <span>${item.quantidade}</span>
+                                <button onclick="mudarQtd(${index}, 1)">+</button>
+                            </div>
+                            <button class="btn-retirar" onclick="removerItemCompleto(${index})">Retirar</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+        
+        subtotalTxt.innerText = totalDinheiro + '€';
+        contadorTxt.innerText = `${totalItens} ${totalItens === 1 ? 'Item' : 'Items'}`;
+        
+        // Calcula quanto falta para os 49€ de envio grátis
+        if(totalDinheiro >= 49) {
+            document.querySelector('.barra-envio-gratis').innerHTML = "Parabéns! Desbloqueaste o <strong>envio grátis</strong>.";
+        } else {
+            let falta = 49 - totalDinheiro;
+            document.querySelector('.barra-envio-gratis').innerHTML = `Gasta mais <strong>${falta}€</strong> e desbloqueia o envio grátis`;
+        }
+    }
+
+    function mudarQtd(index, valor) {
+        let carrinho = JSON.parse(localStorage.getItem('meuCarrinho')) || [];
+        carrinho[index].quantidade += valor;
+        
+        if(carrinho[index].quantidade <= 0) {
+            carrinho.splice(index, 1);
+        }
+        
+        localStorage.setItem('meuCarrinho', JSON.stringify(carrinho));
+        renderizarItensCarrinho();
+        atualizarSacoIcone();
+    }
+
+    function removerItemCompleto(index) {
+        let carrinho = JSON.parse(localStorage.getItem('meuCarrinho')) || [];
+        carrinho.splice(index, 1);
+        localStorage.setItem('meuCarrinho', JSON.stringify(carrinho));
+        renderizarItensCarrinho();
+        atualizarSacoIcone();
+    }
+
+    function atualizarSacoIcone() {
+        let carrinho = JSON.parse(localStorage.getItem('meuCarrinho')) || [];
+        let total = carrinho.reduce((soma, item) => soma + item.quantidade, 0);
+        const iconeContador = document.getElementById('contador-carrinho-icone');
+        if(iconeContador) iconeContador.innerText = total;
+    }
+
+    window.addEventListener('DOMContentLoaded', atualizarSacoIcone);
+</script>
 </body>
 </html>
